@@ -1,8 +1,8 @@
-import { GetStaticProps } from 'next';
-import Stripe from 'stripe';
+import { GetStaticProps } from "next";
+import Stripe from "stripe";
 
-import stripeConfig from '../config/stripe';
-import Link from 'next/link';
+import stripeConfig from "../config/stripe";
+import Link from "next/link";
 
 interface Props {
   skus: Stripe.Sku[];
@@ -10,7 +10,7 @@ interface Props {
 
 export const getStaticProps: GetStaticProps = async () => {
   const stripe = new Stripe(stripeConfig.secretKey, {
-    apiVersion: '2020-03-02',
+    apiVersion: "2020-03-02",
   });
 
   const skus = await stripe.skus.list();
@@ -37,7 +37,7 @@ const HomePage: React.FC<Props> = ({ skus }) => {
             <img
               src={sku.image}
               style={{
-                width: '100px',
+                width: "100px",
               }}
             />
           )}
@@ -46,7 +46,9 @@ const HomePage: React.FC<Props> = ({ skus }) => {
             {Number(sku.price / 100).toFixed(2)} {sku.currency.toUpperCase()}
           </h2>
 
-          <Link href={'/' + sku.id}>Visit Page</Link>
+          <Link href={"/" + sku.id}>
+            <a>Visit Page</a>
+          </Link>
 
           <hr />
         </div>
