@@ -1,30 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+Code Challenge - E-commerce with Next.js SSG and Stripe
+</h1>
 
-## Getting Started
+<p align="center">Mini E-commerce using Next.js Static Site Generator and Stripe Payment API.</p>
 
-First, run the development server:
+<p align="center">
+  <a href="https://github.com/Rocketseat/youtube-challenge-next-stripe/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/rocketseat/youtube-challenge-next-stripe?color=%237159c1&logoColor=%237159c1&style=flat" alt="Contributors">
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/github/license/rocketseat/youtube-challenge-next-stripe?color=%237159c1&logo=mit" alt="License">
+  </a>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+<hr>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Participants
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+| [<img src="https://avatars3.githubusercontent.com/u/10366880?s=460&v=4" width="75px;"/>](https://github.com/guilhermerodz) |
+| :------------------------------------------------------------------------------------------------------------------------: |
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+| [Guilherme Rodz](https://github.com/guilhermerodz)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Functional Requirements
 
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
+- [x] User can view all available products
+- [x] User can buy any available product
 
-## Deploy on Vercel
+## Business Rules
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [x] User is sent to Stripe for Checkout
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Non-functional Requirements
+
+- [x] Next.js (Static Site Generation)
+- [x] Stripe
+- [x] React
+
+## Dependencies
+
+- [Node](https://nodejs.org/en/) = 10
+
+## Getting started
+
+1. Clone this repository;<br />
+2. Run `npm or yarn install` at each project in order to install dependencies.<br />
+3. Run `yarn dev`.<br />
+4. Access `localhost:3000` in your browser.<br />
+5. Run `yarn build && yarn serve` for build and serve the static folder.<br />
+
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
